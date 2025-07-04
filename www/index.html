@@ -22,21 +22,56 @@
 </head>
 
 <body>
-	<div id="header-wrapper">
-		<div id="header-placeholder"></div>
+	<div class="header-wrapper">
 
+		<header class="header container">
+
+			<div class="info">
+				<a href="index.html">
+					<img src="img/logo.png" alt="Restaurace No a Co logo" class="logo" />
+				</a>
+				<br>
+				<strong href="Menu.pdf">Restaurace No a Co</strong><br>
+				<nav class="menu">
+					<a href="Menu.pdf">Denní menu</a>
+					<a href="https://www.facebook.com/pages/Bistro-Na-Osmi%C4%8Dce/529873897103859?fref=ts">Facebook</a>
+					<a href="https://www.instagram.com/restaurace_noaco/">Instagram</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="content container">
+			<section class="content-block">
+				<h2 class="section-title">Kontakt</h2>
+				<p>
+					Provozovatel: Restaurace No a Co s.r.o.<br>
+					IČO: 224 36 260<br>
+					Sídlo: Nové sady 988/2, Staré Brno, 602 00 Brno<br><br>
+					Merhautova 8<br>
+					613 00 Brno<br>
+					Tel.: +420 702 152 582<br>
+					Email: restaurace.noaco@gmail.com
+				</p>
+
+				<h2 class="section-title">Otevírací doba</h2>
+				<p>
+					Pondělí–Úterý: 10.30 – 23.00<br>
+					Středa–Pátek: 10.30 – 24.00<br>
+					Sobota: 11.00 – 24.00<br>
+					Nedělě: 16.00 – 22.00
+				</p>
+
+				<p>Tramvajové spojení linkami 3, 5, 9 – zastávka Dětská nemocnice.</p>
+
+				<h2 class="section-title">Mapa</h2>
+				<div class="map-container">
+					<iframe width="100%" height="260" frameborder="0" scrolling="no"
+						src="https://maps.google.cz/maps?f=q&amp;source=s_q&amp;hl=cs&amp;geocode=&amp;q=merhautova+8,+brno&amp;aq=&amp;sll=49.20207,16.57796&amp;sspn=0.379109,1.056747&amp;t=m&amp;brcurrent=5,0,0&amp;ie=UTF8&amp;hq=&amp;hnear=Merhautova+431%2F8,+Z%C3%A1brdovice,+613+00+Brno&amp;z=14&amp;ll=49.203075,16.619522&amp;output=embed">
+					</iframe>
+				</div>
+			</section>
+		</main>
 	</div>
 </body>
-
-<script>
-	fetch('header.html')
-		.then(response => response.text())
-		.then(data => {
-			document.getElementById('header-placeholder').innerHTML = data;
-		})
-		.catch(error => {
-			console.error('Header load failed:', error);
-		});
-</script>
 
 </html>

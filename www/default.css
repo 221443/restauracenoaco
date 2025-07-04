@@ -1,162 +1,122 @@
-html,
-body {
+/* Base */
+html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Source Sans Pro", sans-serif; /* From first file, preferred over Arial */
-  font-size: 12pt; /* From second file */
-  font-weight: 300; /* From second file */
-  color: #333; /* From first file */
-  background: url("img/header_1.jpg") no-repeat center center fixed; /* From first file */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  background: url("img/header_1.jpg") no-repeat center center fixed;
   background-size: cover;
-  text-align: center;
-  background-origin: content-box; /* Added from second file */
+  background-origin: content-box;
+  line-height: 1.6;
 }
 
-/* Headings */
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-/* Paragraphs and lists */
-p,
-ol,
-ul {
-  margin-top: 0;
-}
-
-p {
-  font-size: 20px; /* From first file */
-  line-height: 1.8;
-  margin-bottom: 30px; /* From first file */
-}
-
-/* Links */
-a {
-  color: #d2232a; /* From first file */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #b51d23; /* From first file */
-  text-decoration: none; /* Ensures hover styling */
-}
-
-/* Button styling */
-a.button {
-  display: inline-block;
-  padding: 15px 30px;
-  background: #d2232a;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-a.button:hover {
-  background: #b51d23;
-}
-
-/* Images */
-img {
-  padding-right: 20px;
-}
-
-img.logo {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* Miscellaneous */
-hr {
-  display: none;
-}
-
-.clearfix {
-  clear: both;
-}
-
-/* Header wrapper */
-#header-wrapper {
+/* Container utility */
+.container {
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
-  width: 950px;
-  min-height: 100%; /* From first file */
-  background-size: 100%;
+  padding: 2rem 1rem;
 }
 
-/* Major section */
-.major {
-  padding-top: 2em;
+/* Header section */
+.header-wrapper {
   text-align: center;
 }
 
-.major h2 {
-  float: left;
-  background: rgba(249, 243, 229, 0.7);
-  margin: 0; /* Present in second file only */
-  text-align: left;
-  font-weight: normal;
-  line-height: 2em;
-  font-size: 1.2em;
-  color: black;
-  width: 299px;
-  padding: 20px;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.info {
+  background: rgba(249, 243, 229, 0.8);
+  padding: 1.5rem;
   border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1rem;
 }
 
-.major h2 a {
-  color: black;
+/* Navigation links */
+.menu {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu a {
+  color: #d2232a;
   text-decoration: none;
+  font-weight: 600;
 }
 
-.major h2 a:hover {
-  color: #883314;
+.menu a:hover {
+  color: #b51d23;
   text-decoration: underline;
 }
 
-/* Content block */
-#content {
-  float: left;
-  font-family: Arial, sans-serif;
-  margin-left: 30px;
-  width: 400px;
-  height: 540px;
-  font-size: 9pt;
-  color: #883314;
-  background: rgba(255, 255, 255, 0.8);
-  text-align: justify;
-  font-weight: normal;
-  line-height: 1em;
-  padding: 30px;
-  overflow: auto;
+/* Main content area */
+.content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.content-block {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
   border-radius: 8px;
-}
-
-#content a {
-  color: black;
-}
-
-#content a:hover {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
   color: #883314;
+  text-align: left;
 }
 
-/* Pricing and labels */
-.nazev {
-  font-size: 12pt;
+.section-title {
+  font-size: 1.25rem;
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-#blok {
-  width: 400px;
-  display: block; /* From second file */
+/* Map styling */
+.map-container {
+  margin-top: 1rem;
+}
+
+iframe {
+  border: none;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .info {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .content-block {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
 }
