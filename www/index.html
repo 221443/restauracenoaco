@@ -1,77 +1,57 @@
 ﻿<!DOCTYPE html>
 <html lang="cs">
-
 <head>
-
-	<meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="index, follow">
-	<link rel="icon" type="image/png" href="img/logo.png">
-	<title>Restaurace No a Co</title>
-
-
-	<meta name="keywords"
-		content="Restaurace No a Co, bistro Brno, restaurace Brno, burger Brno, hamburgery Brno, nejlepší burgry Brno, domácí burgery, moderní bistro Brno, street food Brno" />
-	<meta name="description"
-		content="Restaurace No a Co – moderní bistro v centru Brna. Nabízíme domácí burgery, čerstvé suroviny a přátelskou atmosféru. Přijďte ochutnat to nejlepší z Brna!" />
-
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-	<link rel="icon" type="image/png" href="img/logo.png">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Restaurace No a Co</title>
+  <meta name="keywords" content="Restaurace No a Co, bistro Brno, restaurace Brno, burger Brno, hamburgery Brno, nejlepší burgry Brno, domácí burgery, moderní bistro Brno, street food Brno" />
+  <meta name="description" content="Restaurace No a Co – moderní bistro v centru Brna. Nabízíme domácí burgery, čerstvé suroviny a přátelskou atmosféru. Přijďte ochutnat to nejlepší z Brna!" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet" />
+  <link href="default.css" rel="stylesheet" />
 </head>
-
 <body>
-	<div class="header-wrapper">
-
-		<header class="header container">
-
-			<div class="info">
-				<a href="index.html">
-					<img src="img/logo.png" alt="Restaurace No a Co logo" class="logo" />
-				</a>
-				<br>
-				<strong href="Menu.pdf">Restaurace No a Co</strong><br>
-				<nav class="menu">
-					<a href="Menu.pdf">Denní menu</a>
-					<a href="https://www.facebook.com/pages/Bistro-Na-Osmi%C4%8Dce/529873897103859?fref=ts">Facebook</a>
-					<a href="https://www.instagram.com/restaurace_noaco/">Instagram</a>
-				</nav>
-			</div>
-		</header>
-
-		<main class="content container">
-			<section class="content-block">
-				<h2 class="section-title">Kontakt</h2>
-				<p>
-					Provozovatel: Restaurace No a Co s.r.o.<br>
-					IČO: 224 36 260<br>
-					Sídlo: Nové sady 988/2, Staré Brno, 602 00 Brno<br><br>
-					Merhautova 8<br>
-					613 00 Brno<br>
-					Tel.: +420 702 152 582<br>
-					Email: restaurace.noaco@gmail.com
-				</p>
-
-				<h2 class="section-title">Otevírací doba</h2>
-				<p>
-					Pondělí–Úterý: 10.30 – 23.00<br>
-					Středa–Pátek: 10.30 – 24.00<br>
-					Sobota: 11.00 – 24.00<br>
-					Nedělě: 16.00 – 22.00
-				</p>
-
-				<p>Tramvajové spojení linkami 3, 5, 9 – zastávka Dětská nemocnice.</p>
-
-				<h2 class="section-title">Mapa</h2>
-				<div class="map-container">
-					<iframe width="100%" height="260" frameborder="0" scrolling="no"
-						src="https://maps.google.cz/maps?f=q&amp;source=s_q&amp;hl=cs&amp;geocode=&amp;q=merhautova+8,+brno&amp;aq=&amp;sll=49.20207,16.57796&amp;sspn=0.379109,1.056747&amp;t=m&amp;brcurrent=5,0,0&amp;ie=UTF8&amp;hq=&amp;hnear=Merhautova+431%2F8,+Z%C3%A1brdovice,+613+00+Brno&amp;z=14&amp;ll=49.203075,16.619522&amp;output=embed">
-					</iframe>
-				</div>
-			</section>
-		</main>
-	</div>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="Restaurace No a Co logo" class="logo" />
+        <span class="brand-title">Restaurace No a Co</span>
+      </a>
+      <nav class="nav">
+        <a href="Menu.pdf">Denní menu</a>
+        <a href="https://www.facebook.com/pages/Bistro-Na-Osmi%C4%8Dce/529873897103859?fref=ts" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/restaurace_noaco/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <section>
+        <h2>Kontakt</h2>
+        <address>
+          Provozovatel: Restaurace No a Co s.r.o.<br>
+          IČO: 224 36 260<br>
+          Sídlo: Nové sady 988/2, Staré Brno, 602 00 Brno<br><br>
+          Merhautova 8<br>
+          613 00 Brno<br>
+          Tel.: <a href="tel:+420702152582">+420 702 152 582</a><br>
+          Email: <a href="mailto:restaurace.noaco@gmail.com">restaurace.noaco@gmail.com</a>
+        </address>
+        <h2>Otevírací doba</h2>
+        <ul class="opening-hours">
+          <li>Pondělí–Úterý: 10.30 – 23.00</li>
+          <li>Středa–Pátek: 10.30 – 24.00</li>
+          <li>Sobota: 11.00 – 24.00</li>
+          <li>Neděle: 16.00 – 22.00</li>
+        </ul>
+        <p>Tramvajové spojení linkami 3, 5, 9 – zastávka Dětská nemocnice.</p>
+        <h2>Mapa</h2>
+        <div class="map-container">
+          <iframe width="100%" height="260" frameborder="0" scrolling="no"
+            src="https://maps.google.cz/maps?f=q&amp;source=s_q&amp;hl=cs&amp;geocode=&amp;q=merhautova+8,+brno&amp;aq=&amp;sll=49.20207,16.57796&amp;sspn=0.379109,1.056747&amp;t=m&amp;brcurrent=5,0,0&amp;ie=UTF8&amp;hq=&amp;hnear=Merhautova+431%2F8,+Z%C3%A1brdovice,+613+00+Brno&amp;z=14&amp;ll=49.203075,16.619522&amp;output=embed">
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
-
 </html>
