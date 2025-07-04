@@ -1,4 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} off [NC]
-RewriteRule (.*) https://www.naosmicce.cz%{REQUEST_URI} [L,R=301,QSA]

@@ -1,187 +1,162 @@
-
-html, body
-{
-	height: 100%;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif; /* From first file, preferred over Arial */
+  font-size: 12pt; /* From second file */
+  font-weight: 300; /* From second file */
+  color: #333; /* From first file */
+  background: url("img/header_1.jpg") no-repeat center center fixed; /* From first file */
+  background-size: cover;
+  text-align: center;
+  background-origin: content-box; /* Added from second file */
 }
 
-body
-{
-	margin: 0px;
-	padding: 0px;
-	background: #171717;
-	background: url('img/header_1.jpg') no-repeat top center;
-	background-position: center 100%;
-	font-family: Arial, sans-serif;
-	font-size: 12pt;
-	font-weight: 300;
-	color: #363636;
-	}
-
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-h1, h2, h3
-{
-	margin: 0;
-	padding: 0;
+/* Headings */
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
-p, ol, ul
-{
-	margin-top: 0px;
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-p
-{
-	line-height: 180%;
+/* Paragraphs and lists */
+p,
+ol,
+ul {
+  margin-top: 0;
 }
 
-strong
-{
+p {
+  font-size: 20px; /* From first file */
+  line-height: 1.8;
+  margin-bottom: 30px; /* From first file */
 }
 
-a
-{
-	color: #EBA612;
+/* Links */
+a {
+  color: #d2232a; /* From first file */
+  text-decoration: none;
 }
 
-a:hover
-{
-	text-decoration: none;
+a:hover {
+  color: #b51d23; /* From first file */
+  text-decoration: none; /* Ensures hover styling */
 }
 
-
-hr
-{
-	display: none;
+/* Button styling */
+a.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #d2232a;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
 
-img
-{
-	padding-right: 20px;
+a.button:hover {
+  background: #b51d23;
 }
 
-.clearfix
-{
-	clear: both;
+/* Images */
+img {
+  padding-right: 20px;
 }
 
-
-/*********************************************************************************/
-/* Wrappers                                                                      */
-/*********************************************************************************/
-
-#header-wrapper
-{
-	margin: 0px auto;
-	height: 100%;
-	width: 950px;
-	background-size: 100%;
+img.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-
-
-
-	.major
-	{
-		padding-top: 2em;
-		text-align: center;
-	}
-	
-	.major h2
-	{
-		float: left;
-		background: rgba(249,243,229,.7);
-		margin: 0em;
-		text-align: left;
-		font-weight: normal;
-		line-height: 2em;
-		font-size: 1.2em;
-		color: black;
-		width: 299px;
-		padding: 20px;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
-		behavior: url(/PIE.htc);
+/* Miscellaneous */
+hr {
+  display: none;
 }
 
-	.major h2 a
-	{
-		text-decoration: none;
-		color: black;
+.clearfix {
+  clear: both;
 }
 
-	.major h2 a:hover
-	{
-		text-decoration: underline;
-		color: #883314;
+/* Header wrapper */
+#header-wrapper {
+  margin: 0 auto;
+  width: 950px;
+  min-height: 100%; /* From first file */
+  background-size: 100%;
 }
 
-#content
-	{
-	float: left;
-	margin-left: 30px;
-	width: 400px;
-	height: 540px;
-	font-family: Arial, sans-serif;
-	font-size: 9pt;
-	color: #883314;
-	background: rgba(255,255,255,.8);
-	text-align: justify;
-	font-weight: normal;
-	line-height: 1em;
-	padding: 30px;
-	overflow: auto;
-	scrollbar-track-color: silver;
-	scrollbar-face-color: gray;
-	scrollbar-highlight-color: dark gray;
-	scrollbar-3dlight-color: green;
-	scrollbar-darkshadow-color: gray;
-	scrollbar-shadow-color: gray;
-	scrollbar-arrow-color: gray;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	behavior: url(/PIE.htc);	
+/* Major section */
+.major {
+  padding-top: 2em;
+  text-align: center;
 }
 
-
-#content a
-	{
-	color: black;
+.major h2 {
+  float: left;
+  background: rgba(249, 243, 229, 0.7);
+  margin: 0; /* Present in second file only */
+  text-align: left;
+  font-weight: normal;
+  line-height: 2em;
+  font-size: 1.2em;
+  color: black;
+  width: 299px;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-#content a:hover
-	{
-	color: #883314;
+.major h2 a {
+  color: black;
+  text-decoration: none;
 }
 
-.nazev
-	{
-		padding: 0px;
-		font-size: 12pt;
-		font-weight: bold;
-		padding-bottom: 20px;
+.major h2 a:hover {
+  color: #883314;
+  text-decoration: underline;
 }
 
-#blok
-	{
-		display: block;
-		width: 400px;
+/* Content block */
+#content {
+  float: left;
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  width: 400px;
+  height: 540px;
+  font-size: 9pt;
+  color: #883314;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: justify;
+  font-weight: normal;
+  line-height: 1em;
+  padding: 30px;
+  overflow: auto;
+  border-radius: 8px;
 }
 
-.nazev1
-	{
-		float: left;
-		padding: 0px;
-		margin: 0px;
+#content a {
+  color: black;
 }
 
-.cena1
-	{
-		float: right;
-		margin: 0;
+#content a:hover {
+  color: #883314;
+}
+
+/* Pricing and labels */
+.nazev {
+  font-size: 12pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+#blok {
+  width: 400px;
+  display: block; /* From second file */
 }

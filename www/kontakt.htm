@@ -7,35 +7,20 @@
 		content="bistro, restaurace, bistro v brně, burger brno, hamburgery brno, nabídka hamburgerů, nabídka burgrů brno, nabídka bugerů brno, kontakt" />
 	<meta name="description" content="" />
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-	<link href="default-kontakt.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
 <body>
 	<div id="header-wrapper">
 
-		<div class="major">
-			<h2>
-				<a href="index.html"><img src="img/logo.png" border="0"></a><br>
-				<strong>Restaurace No a Co s.r.o.</strong>
-				<br> Merhautova 8, Brno 613 00<br>Rezervace na 702 152 582
-				<br><br><a href="jidelni_listek.htm">Jídelní lístek</a>
-				<br><a href="napojovy_listek.htm">Nápojový lístek</a>
-				<br><a href="Menu.pdf">Denní menu</a>
-				<br><a href="fotogalerie.htm">Fotogalerie</a>
-				<br><a href="kontakt.htm">Kontakt</a>
-				<br><a href="https://www.facebook.com/pages/Bistro-Na-Osmi%C4%8Dce/529873897103859?fref=ts">Facebook</a>
-			</h2>
-		</div>
+
+		<div id="header-placeholder"></div>
 
 		<div id="content">
-
-			<span class="nazev">Kontakt</span> <br><br><br>
-
 			<div id="blok">
-
-				Provozovatel: Marek Očenáš,<br>
+				<span class="nazev">Kontakt</span> <br><br><br>
+				Provozovatel: Restaurace No a Co s.r.o.<br>
 				IČO: 224 36 260<br>
 				Sídlo: Nové sady 988/2, Staré Brno, 602 00 Brno<br>
 				<br>
@@ -48,15 +33,11 @@
 				Pondělí-Úterý: 10.30 - 23.00<br>
 				Středa-Pátek: 10.30 - 24.00<br>
 				Sobota: 11.00 - 24.00<br>
-				Nedělě 16.00 - 24.00<br><br>
+				Nedělě 16.00 - 22.00<br><br>
 
-				Tramvajové spojení linkami 3, 5, 11 zastávka Dětská nemocnice.
+				Tramvajové spojení linkami 3, 5, 9 zastávka Dětská nemocnice.
 				<br><br><br>
-
-				<span class="nazev">EET</span> <br><br>
-				Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku. Zároveň je povinen
-				zaevidovat přijatou tržbu u správce daně online. V případě technického výpadku pak nejpozději do 48
-				hodin.
+				<span class="nazev">Mapa</span>
 				<br><br>
 				<iframe width="400" height="260" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
 					src="https://maps.google.cz/maps?f=q&amp;source=s_q&amp;hl=cs&amp;geocode=&amp;q=merhautova+8,+brno&amp;aq=&amp;sll=49.20207,16.57796&amp;sspn=0.379109,1.056747&amp;t=m&amp;brcurrent=5,0,0&amp;ie=UTF8&amp;hq=&amp;hnear=Merhautova+431%2F8,+Z%C3%A1brdovice,+613+00+Brno&amp;z=14&amp;ll=49.203075,16.619522&amp;output=embed"></iframe><br /><small><a
@@ -69,5 +50,16 @@
 
 	</div>
 </body>
+
+<script>
+	fetch('header.html')
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById('header-placeholder').innerHTML = data;
+		})
+		.catch(error => {
+			console.error('Header load failed:', error);
+		});
+</script>
 
 </html>
