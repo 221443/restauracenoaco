@@ -1,165 +1,127 @@
 ﻿<!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <title>Restaurace No a Co</title>
-    <meta
-      name="keywords"
-      content="Restaurace No a Co, bistro Brno, restaurace Brno, burger Brno, hamburgery Brno, nejlepší burgry Brno, domácí burgery, moderní bistro Brno, street food Brno"
-    />
-    <meta
-      name="description"
-      content="Restaurace No a Co – moderní bistro v centru Brna. Nabízíme domácí burgery, čerstvé suroviny a přátelskou atmosféru. Přijďte ochutnat to nejlepší z Brna!"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet" />
-    <link href="default.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <a href="index.html" class="brand">
-          <img src="img/logo.png" alt="Restaurace No a Co logo" class="logo" />
-          <span class="brand-title">Restaurace No a Co</span>
-        </a>
-        <nav class="nav">
-          <a id="menu-link" href="#">Denní menu</a>
-          <a href="Jídelní lístek - No a Co.pdf">Jídelní lístek</a>
-          <a href="Nápojový lístek - No a Co.pdf">Nápojový lístek</a>
-          <script>
-            const link = document.getElementById("menu-link");
-            link.href = "Menu.pdf?v=" + new Date().getTime();
-          </script>
-          <a href="https://www.facebook.com/pages/Bistro-Na-Osmi%C4%8Dce/529873897103859?fref=ts" target="_blank" rel="noopener">Facebook</a>
-          <a href="https://www.instagram.com/restaurace_noaco/" target="_blank" rel="noopener">Instagram</a>
-        </nav>
-      </aside>
-      <main class="main-content">
-        <section>
-          <h2>Kontakt</h2>
-          <address>
-            Restaurace No a Co s.r.o.<br />
-            IČO: 224 36 260<br />
-            Merhautova 8<br />
-            613 00 Brno<br />
-            Tel.: <a href="tel:+420702152582">+420 702 152 582</a><br />
-            Email: <a href="mailto:restaurace.noaco@gmail.com">restaurace.noaco@gmail.com</a>
-          </address>
-          <h2>Otevírací doba</h2>
-          <ul class="opening-hours">
-            <li>Pondělí–Úterý: 10.30 – 23.00</li>
-            <li>Středa–Pátek: 10.30 – 24.00</li>
-            <li>Sobota: 11.00 – 24.00</li>
-            <li>Neděle: 16.00 – 22.00</li>
-          </ul>
-          <p>Tramvajové spojení linkami 3, 5, 9 – zastávka Dětská nemocnice.</p>
-          <h2>Mapa</h2>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.868638370055!2d16.616996276771754!3d49.203051476389454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712945f97f9a141%3A0xb78f76fffe998500!2sNo%20a%20Co%20Restaurace!5e0!3m2!1scs!2scz!4v1751637485489!5m2!1scs!2scz"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <h2>Menu</h2>
-          <div class="menu-image" style="text-align: center; margin-top: 2em">
-            <img src="Menu.png" alt="Menu Restaurace No a Co" style="max-width: 100%; height: auto" />
-          </div>
-          <h2>Přepis</h2>
-          <p class="c11"><span class="c14">Poledn&iacute; menu </span></p>
-          <p class="c11"><span class="c12">01.09. - 05.09.2025</span></p>
-          <p class="c3"><span class="c1">Pond&#283;l&iacute; 01.09.</span></p>
-          <p class="c3"><span class="c1">Pol&eacute;vka: Bramborov&aacute; ()</span></p>
-          <p class="c3">
-            <span class="c5">1.</span
-            ><span class="c10"
-              >150g Ku&#345;ec&iacute; pl&aacute;tek zape&#269;en&yacute; se &#382;ampiony a s&yacute;rem, bramborov&aacute; ka&scaron;e (7)</span
-            ><span class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-</span>
-          </p>
-          <p class="c3">
-            <span class="c1"
-              >2. 150g Pe&#269;en&eacute; ku&#345;ec&iacute; steh&yacute;nko pln&#283;n&eacute; nivou , r&yacute;&#382;e
-              (7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-
-            </span>
-          </p>
-          <p class="c3">
-            <span class="c1"
-              >3. 300g &#268;o&#269;ka na kyselo, vejce, klob&aacute;sa, chl&eacute;b, okurek(1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150,-</span
-            >
-          </p>
-          <p class="c3 c8"><span class="c1"></span></p>
-          <p class="c3"><span class="c1">&Uacute;ter&yacute; 02.09.</span></p>
-          <p class="c3"><span class="c1">Pol&eacute;vka: Brokolicov&yacute; kr&eacute;m (7)</span></p>
-          <p class="c3"><span class="c1">1. 300g Bolo&#328;sk&eacute; &scaron;pagety (1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;160,-</span></p>
-          <p class="c3">
-            <span class="c1"
-              >2. 150g Ku&#345;ec&iacute; kousky s ananasem po pekingsku, pe&#269;en&eacute; brambory (14)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-
-            </span>
-          </p>
-          <p class="c3">
-            <span class="c1"
-              >3. 150g &Scaron;pen&aacute;tov&eacute; &nbsp;karban&aacute;tky, bramborov&aacute; ka&scaron;e, okurek
-              (1,3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;145,-</span
-            >
-          </p>
-          <p class="c3"><span class="c1">&nbsp;</span></p>
-          <p class="c3"><span class="c1">St&#345;eda 03.09.</span></p>
-          <p class="c3"><span class="c1">Pol&eacute;vka: Cibula&#269;ka ()</span></p>
-          <p class="c3">
-            <span class="c1"
-              >1. 150g Vep&#345;ov&yacute; karban&aacute;tek s bramborovou ka&scaron;&iacute;, okurek
-              (1,3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-</span
-            >
-          </p>
-          <p class="c3">
-            <span class="c5">2. </span
-            ><span class="c13">300g Bramborov&eacute; noky s ku&#345;ec&iacute;m masem ve smetanovo-s&yacute;rov&eacute; om&aacute;&#269;ce(1,3,7)</span
-            ><span class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200,- </span>
-          </p>
-          <p class="c3">
-            <span class="c1"
-              >3. 120g Sma&#382;en&yacute; s&yacute;r, hranolky, dom&aacute;c&iacute; tatarka
-              (1,3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;145,-</span
-            >
-          </p>
-          <p class="c3 c8"><span class="c1"></span></p>
-          <p class="c3"><span class="c1">&#268;tvrtek 04.09.</span></p>
-          <p class="c3"><span class="c1">Pol&eacute;vka: Gul&aacute;&scaron;ov&aacute; ()</span></p>
-          <p class="c3">
-            <span class="c1"
-              >1. 150g Dom&aacute;c&iacute; sekan&aacute;, bramborov&aacute; ka&scaron;e, okurka
-              (3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-</span
-            >
-          </p>
-          <p class="c3">
-            <span class="c1">2. 200g Hov&#283;z&iacute; znojemsk&aacute;, r&yacute;&#382;e (10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;160,- </span>
-          </p>
-          <p class="c3">
-            <span class="c5">3.</span
-            ><span class="c10">&nbsp;200g &Scaron;pagety s pestem ze su&scaron;en&yacute;ch raj&#269;at a bazalky, sypan&eacute; s&yacute;rem (1,3,7)</span
-            ><span class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150,-</span>
-          </p>
-          <p class="c3 c8"><span class="c1"></span></p>
-          <p class="c3"><span class="c1">P&aacute;tek 05.09.</span></p>
-          <p class="c3">
-            <span class="c1">Pol&eacute;vka: Ml&eacute;&#269;n&aacute; pol&eacute;vka s fazolov&yacute;mi lusky na kyselo s klob&aacute;sou (7)</span>
-          </p>
-          <p class="c3"><span class="c1">1. 200g Ku&#345;ec&iacute; na kari, r&yacute;&#382;e ()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-</span></p>
-          <p class="c3">
-            <span class="c1"
-              >2. 150g Ku&#345;ec&iacute; &#345;&iacute;zek, bramborov&aacute; ka&scaron;e, okurek (1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;160,-
-            </span>
-          </p>
-          <p class="c3"><span class="c1">3. 200g &#381;emlovka s tvarohem a jablkem (1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;145,-</span></p>
-        </section>
-      </main>
-    </div>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="index, follow" />
+	<link rel="icon" type="image/png" href="img/logo.png" />
+	<title>Restaurace No a Co</title>
+	<meta name="keywords"
+		content="Restaurace No a Co, bistro Brno, restaurace Brno, burger Brno, hamburgery Brno, nejlepší burgry Brno, domácí burgery, moderní bistro Brno, street food Brno" />
+	<meta name="description"
+		content="Restaurace No a Co – moderní bistro v centru Brna. Nabízíme domácí burgery, čerstvé suroviny a přátelskou atmosféru. Přijďte ochutnat to nejlepší z Brna!" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap"
+		rel="stylesheet" />
+	<link href="default.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="layout">
+		<aside class="sidebar">
+			<a href="index.html" class="brand">
+				<img src="img/logo.png" alt="Restaurace No a Co logo" class="logo" />
+				<span class="brand-title">Restaurace No a Co</span>
+			</a>
+			<nav class="nav">
+				<a id="menu-link" href="#">Denní menu</a>
+				<a href="Jídelní lístek - No a Co.pdf">Jídelní lístek</a>
+				<a href="Nápojový lístek - No a Co.pdf">Nápojový lístek</a>
+				<script>
+					const link = document.getElementById("menu-link");
+					link.href = "Menu.pdf?v=" + new Date().getTime();
+				</script>
+				<a href="https://www.facebook.com/pages/Bistro-Na-Osmi%C4%8Dce/529873897103859?fref=ts" target="_blank"
+					rel="noopener">Facebook</a>
+				<a href="https://www.instagram.com/restaurace_noaco/" target="_blank" rel="noopener">Instagram</a>
+			</nav>
+		</aside>
+		<main class="main-content">
+			<section>
+				<h2>Kontakt</h2>
+				<address>
+					Restaurace No a Co s.r.o.<br />
+					IČO: 224 36 260<br />
+					Merhautova 8<br />
+					613 00 Brno<br />
+					Tel.: <a href="tel:+420702152582">+420 702 152 582</a><br />
+					Email: <a href="mailto:restaurace.noaco@gmail.com">restaurace.noaco@gmail.com</a>
+				</address>
+				<h2>Otevírací doba</h2>
+				<ul class="opening-hours">
+					<li>Pondělí–Úterý: 10.30 – 23.00</li>
+					<li>Středa–Pátek: 10.30 – 24.00</li>
+					<li>Sobota: 11.00 – 24.00</li>
+					<li>Neděle: 16.00 – 22.00</li>
+				</ul>
+				<p>Tramvajové spojení linkami 3, 5, 9 – zastávka Dětská nemocnice.</p>
+				<h2>Mapa</h2>
+				<div class="map-container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.868638370055!2d16.616996276771754!3d49.203051476389454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712945f97f9a141%3A0xb78f76fffe998500!2sNo%20a%20Co%20Restaurace!5e0!3m2!1scs!2scz!4v1751637485489!5m2!1scs!2scz"
+						width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<h2>Menu</h2>
+				<div class="menu-image" style="text-align: center; margin-top: 2em">
+					<img src="Menu.png" alt="Menu Restaurace No a Co" style="max-width: 100%; height: auto" />
+				</div>
+				<h2>Přepis</h2>
+				<p class="c9"><span class="c11">Poledn&iacute; menu </span></p>
+				<p class="c9"><span class="c12">08.09. - 12.09.2025</span></p>
+				<p class="c4"><span class="c2">Pond&#283;l&iacute; 08.09.</span></p>
+				<p class="c4"><span class="c2">Pol&eacute;vka: &#268;o&#269;kov&aacute; ()</span></p>
+				<p class="c4"><span class="c2">1. 150g Ku&#345;ec&iacute; pl&aacute;tek s broskv&iacute; a s&yacute;rem,
+						r&yacute;&#382;e &nbsp;(7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150,-</span></p>
+				<p class="c4"><span class="c2">2. 150g &#344;epov&eacute; karban&aacute;tky, pe&#269;en&eacute; brambory
+						dom&aacute;c&iacute; tatarka
+						&nbsp;(1,3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150,- </span>
+				</p>
+				<p class="c4"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+				<p class="c4 c6"><span class="c2"></span></p>
+				<p class="c4"><span class="c2">&Uacute;ter&yacute; 09.09.</span></p>
+				<p class="c4"><span class="c2">Pol&eacute;vka: Fazolov&aacute; s klob&aacute;skou (1,3)</span></p>
+				<p class="c4"><span class="c2">1. 300g Hov&#283;z&iacute; gul&aacute;&scaron;, houskov&yacute;
+						knedl&iacute;k
+						&nbsp;(1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;160,-</span></p>
+				<p class="c4"><span class="c2">2. 130g Sma&#382;en&yacute; s&yacute;r s pe&#269;en&yacute;mi bramborami,
+						dom&aacute;c&iacute; tatarka&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;150,-</span></p>
+				<p class="c4 c6"><span class="c2"></span></p>
+				<p class="c4"><span class="c2">&nbsp;</span></p>
+				<p class="c4"><span class="c2">St&#345;eda 10.09.</span></p>
+				<p class="c4"><span class="c2">Pol&eacute;vka: Gul&aacute;&scaron;ov&aacute;, chleba (1,3,7)</span></p>
+				<p class="c4"><span class="c2">1. 150g Medailonky z vep&#345;ov&eacute; panenky, pep&#345;ov&aacute;
+						om&aacute;&#269;ka, pe&#269;en&eacute; brambory
+						(7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;160,-
+					</span></p>
+				<p class="c4"><span class="c2">2. 120g Sma&#382;en&yacute; s&yacute;r, hranolky, dom&aacute;c&iacute;
+						tatarka
+						(1,3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;145,-</span></p>
+				<p class="c4 c6"><span class="c2"></span></p>
+				<p class="c4"><span class="c2">&#268;tvrtek 11.09.</span></p>
+				<p class="c4"><span class="c5">Pol&eacute;vka</span><span class="c5 c14">: </span><span
+						class="c5">K&#345;enov&aacute; kr&eacute;mov&aacute; pol&eacute;vka s uzen&yacute;m
+						masem</span><span class="c2">&nbsp;(7)</span></p>
+				<p class="c4"><span class="c2">1. 150g Ku&#345;ec&iacute; &#345;&iacute;zek s bramborov&yacute;m
+						sal&aacute;tem
+						(1,3,7,10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;160,- </span></p>
+				<p class="c4"><span class="c2">2. 200g &#268;o&#269;ka na kyselo, vejce, chl&eacute;b
+						(1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;145,-</span></p>
+				<p class="c4 c6"><span class="c2"></span></p>
+				<p class="c4"><span class="c2">P&aacute;tek 12.09.</span></p>
+				<p class="c4"><span class="c2">Pol&eacute;vka: Hr&aacute;&scaron;kovo m&aacute;tov&yacute;
+						&nbsp;kr&eacute;m s
+						krutony (1,3,7)</span></p>
+				<p class="c4"><span class="c2">1. 150g Ku&#345;ec&iacute; ro&scaron;&#357;&aacute;ci, bramborov&aacute;
+						ka&scaron;e
+						(3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;155,-</span></p>
+				<p class="c4"><span class="c2">2. 300g Duk&aacute;tov&eacute; buchti&#269;ky s vanilkov&yacute;m
+						kr&eacute;mem
+						(1,3,7)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;145,-</span></p>
+				<p class="c4 c6"><span class="c2"></span></p>
+			</section>
+		</main>
+	</div>
+</body>
+
 </html>
